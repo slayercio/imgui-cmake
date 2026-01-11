@@ -57,31 +57,31 @@ set(IMGUI_BACKEND_HEADERS "")
 
 if (IMGUI_BACKEND_WIN32)
     list(APPEND IMGUI_BACKEND_SOURCES
-        "${CMAKE_CURRENT_SOURCE_DIR}/backends/imgui_impl_win32.cpp"
+        "${CMAKE_CURRENT_SOURCE_DIR}/src/imgui_impl_win32.cpp"
     )
 
     list(APPEND IMGUI_BACKEND_HEADERS
-        "${CMAKE_CURRENT_SOURCE_DIR}/backends/imgui_impl_win32.h"
+        "${CMAKE_CURRENT_SOURCE_DIR}/include/imgui/backends/imgui_impl_win32.h"
     )
 endif()
 
 if (IMGUI_BACKEND_DX11)
     list(APPEND IMGUI_BACKEND_SOURCES
-        "${CMAKE_CURRENT_SOURCE_DIR}/backends/imgui_impl_dx11.cpp"
+        "${CMAKE_CURRENT_SOURCE_DIR}/src/imgui_impl_dx11.cpp"
     )
 
     list(APPEND IMGUI_BACKEND_HEADERS
-        "${CMAKE_CURRENT_SOURCE_DIR}/backends/imgui_impl_dx11.h"
+        "${CMAKE_CURRENT_SOURCE_DIR}/include/imgui/backends/imgui_impl_dx11.h"
     )
 endif()
 
 if (IMGUI_BACKEND_DX12)
     list(APPEND IMGUI_BACKEND_SOURCES
-        "${CMAKE_CURRENT_SOURCE_DIR}/backends/imgui_impl_dx12.cpp"
+        "${CMAKE_CURRENT_SOURCE_DIR}/src/imgui_impl_dx12.cpp"
     )
 
     list(APPEND IMGUI_BACKEND_HEADERS
-        "${CMAKE_CURRENT_SOURCE_DIR}/backends/imgui_impl_dx12.h"
+        "${CMAKE_CURRENT_SOURCE_DIR}/include/imgui/backends/imgui_impl_dx12.h"
     )
 endif()
 
